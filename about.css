@@ -1,0 +1,43 @@
+body {
+    background-color: gray;
+}
+
+
+/* navigation */
+
+.clear {
+    clear: both;
+}
+
+.navigation {
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navigation .menu {
+    float: right;
+}
+
+.navigation li {
+    float: left;
+    list-style: none;
+    margin-right: 15px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.navigation i {
+    color: #fff;
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .navigation li {
+        width: 25;
+    }
+    .navigation .menu {
+        float: none;
+    }
+}

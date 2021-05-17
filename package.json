@@ -1,0 +1,29 @@
+{
+  "name": "portfolio3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-compass": "^2.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raywang1025/portfolio3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raywang1025/portfolio3/issues"
+  },
+  "homepage": "https://github.com/raywang1025/portfolio3#readme"
+}
