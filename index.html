@@ -7,30 +7,28 @@
 
     <!-- css -->
     <link rel="stylesheet" href="public/css/style.css">
+    <!-- jquery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 </head>
 
 <body>
     <div class="container">
-        <!-- navigation -->
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="index.html">Work</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-
-                <div class="clear"></div>
-            </ul>
-            <div class="clear"></div>
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="index.html">Wrok</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
         <!-- web -->
         <div class="box" id="porfolio">
-            <div class="">
-                <h2 class="exhibit-title">Portfolio</h2>
-            </div>
-
             <div class="work_container">
                 <div class="web_item">
                     <a href="https://raywang1025.github.io/yan_bs/">
@@ -101,8 +99,9 @@
     <footer></footer>
 
     </div>
+
     <script src="js/main.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
 
 </body>
 
