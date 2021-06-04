@@ -154,14 +154,37 @@ a {
 .web_item h3 {
   font-size: 28px;
   padding: 16px 0;
+  color: white;
+}
+
+.web_item p {
+  font-size: 16px;
+  color: white;
+  padding-bottom: 16px;
+}
+
+.work_container {
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .web_item {
-  width: 30%;
-  height: 300px;
-  margin: 36px 5%;
-  padding: 0 5%;
+  width: 640px;
+  margin-bottom: 200px 0;
   float: left;
+}
+
+.web_item img:hover {
+  transition: 0.7s;
+  transform: scale(1.5);
+  opacity: 0.5;
+}
+
+.web_item a {
+  display: block;
+  width: 640px;
+  height: 200px;
+  overflow: hidden;
 }
 
 .responsive {
@@ -172,7 +195,6 @@ a {
 @media screen and (max-width: 768px) {
   .web_item {
     width: 80%;
-    /* height: 300px; */
     margin: 36px 5%;
     padding: 0 5%;
     /* background-color: gray; */
