@@ -1,57 +1,195 @@
-a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 
 /* navigation */
-
 .navigation li {
-    float: right;
-    list-style-type: none;
-    margin: 16px 36px;
+  float: right;
+  list-style-type: none;
+  margin: 16px 36px;
 }
 
-
 /* box */
+.web_item h3 {
+  font-size: 28px;
+  padding: 16px 0;
+}
 
 .web_item {
-    width: 30%;
-    height: 300px;
-    margin: 36px 5%;
-    padding: 0 5%;
-    float: left;
-    /* background-color: gray; */
+  width: 30%;
+  height: 300px;
+  margin: 36px 5%;
+  padding: 0 5%;
+  float: left;
 }
 
 .responsive {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
-    .web_item {
-        width: 80%;
-        /* height: 300px; */
-        margin: 36px 5%;
-        padding: 0 5%;
-        /* background-color: gray; */
-    }
+  .web_item {
+    width: 80%;
+    /* height: 300px; */
+    margin: 36px 5%;
+    padding: 0 5%;
+    /* background-color: gray; */
+  }
 }
 
 .clearfix {
-    clear: both;
+  clear: both;
 }
-
 
 /* contact */
-
 .contact {
-    padding: 200px 30px;
-    font-size: 36px;
-    font-weight: 600;
-    width: 100%;
-    display: flex;
-    justify-content: space-around
+  padding: 200px 30px;
+  font-size: 36px;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
+/*# sourceMappingURL=style.css.map */

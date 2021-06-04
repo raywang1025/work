@@ -1,0 +1,78 @@
+// 設定RWD斷點
+@import "cssReset";
+$padWidth: 768px;
+%absoluteCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* navigation */
+
+.navigation li {
+    float: right;
+    list-style-type: none;
+    margin: 16px 36px;
+}
+
+
+/* box */
+
+%titlefont {
+    font-size: 28px;
+    padding: 16px 0;
+}
+
+.web_item {
+    width: 30%;
+    height: 300px;
+    margin: 36px 5%;
+    padding: 0 5%;
+    float: left;
+    h3 {
+        @extend %titlefont;
+    }
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: $padWidth) {
+    .web_item {
+        width: 80%;
+        /* height: 300px; */
+        margin: 36px 5%;
+        padding: 0 5%;
+        /* background-color: gray; */
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* contact */
+
+.contact {
+    padding: 200px 30px;
+    font-size: 36px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: space-around
+}
