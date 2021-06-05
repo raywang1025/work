@@ -157,6 +157,26 @@ a {
   cursor: pointer;
 }
 
+/* box */
+.brand {
+  color: white;
+  margin: 16px 36px;
+  float: left;
+}
+
+/* navigation */
+.nav {
+  max-width: 1248px;
+  float: right;
+}
+
+.nav li {
+  float: left;
+  list-style-type: none;
+  margin: 16px 36px;
+  color: white;
+}
+
 .banner {
   max-width: 100%;
   padding: 13% 25%;
@@ -201,14 +221,6 @@ a {
   }
 }
 
-/* navigation */
-.navigation li {
-  float: right;
-  list-style-type: none;
-  margin: 16px 36px;
-}
-
-/* box */
 .web_item h3 {
   font-size: 28px;
   padding: 16px 0;
