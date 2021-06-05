@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,6 +134,12 @@ table {
   border-spacing: 0;
 }
 
+img {
+  max-width: 100%;
+  /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
+  height: auto;
+}
+
 body {
   background-color: black;
 }
@@ -164,13 +171,14 @@ a {
 }
 
 .work_container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .web_item {
-  width: 640px;
-  margin-bottom: 200px 0;
+  max-width: 45%;
+  margin-bottom: 60px;
+  padding: 0 2.5%;
   float: left;
 }
 
@@ -182,22 +190,14 @@ a {
 
 .web_item a {
   display: block;
-  width: 640px;
+  max-width: 100%;
   height: 200px;
   overflow: hidden;
 }
 
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
 @media screen and (max-width: 768px) {
   .web_item {
-    width: 80%;
-    margin: 36px 5%;
-    padding: 0 5%;
-    /* background-color: gray; */
+    max-width: 100%;
   }
 }
 
@@ -206,12 +206,4 @@ a {
 }
 
 /* contact */
-.contact {
-  padding: 200px 30px;
-  font-size: 36px;
-  font-weight: 600;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
 /*# sourceMappingURL=style.css.map */
