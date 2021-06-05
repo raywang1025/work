@@ -159,9 +159,22 @@ a {
 
 /* box */
 .brand {
-  color: white;
-  margin: 16px 36px;
+  text-align: center;
+  line-height: 76px;
+  width: 80px;
+  height: 80px;
+  color: black;
+  margin: 24px;
   float: left;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.brand:hover {
+  background-color: #2dce45;
+  transition: 0.7s;
 }
 
 /* navigation */

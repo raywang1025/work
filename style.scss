@@ -28,10 +28,27 @@ a {
 
 /* box */
 
+// .fixedRay {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+// }
 .brand {
-    color: white;
-    margin: 16px 36px;
+    text-align: center;
+    line-height: 76px;
+    width: 80px;
+    height: 80px;
+    color: black;
+    margin: 24px;
     float: left;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    &:hover {
+        background-color: rgb(45, 206, 69);
+        transition: 0.7s;
+    }
 }
 
 
