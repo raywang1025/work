@@ -48,6 +48,15 @@ a {
     }
 }
 
+.header_menu {
+    padding: 8px 12px;
+    a:hover {
+        opacity: 50%;
+        transition: 0.7s;
+        border-bottom: 1px solid white;
+    }
+}
+
 @media screen and (max-width:$padWidth) {
     // .nav {
     //     ul {
