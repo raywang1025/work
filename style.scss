@@ -1,6 +1,7 @@
 // 設定RWD斷點
 @import "cssReset";
 $padWidth: 768px;
+$desktopWidth: 1248px;
 %absoluteCenter {
     position: absolute;
     left: 50%;
@@ -8,6 +9,12 @@ $padWidth: 768px;
     transform: translate(-50%, -50%)
 }
 
+// %absoluteDefault {
+//     position: relative;
+//     left: 0%;
+//     top: 0%;
+//     transform: translate(0%, 0%)
+// }
 img {
     max-width: 100%;
     /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
@@ -22,6 +29,53 @@ a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+
+// banner
+.banner {
+    // @extend %absoluteCenter;
+    max-width: 100%;
+    // background-color: pink;
+    padding: 13% 25%;
+    img {
+        border-radius: 30% 0 30% 0;
+    }
+    h1 {
+        @extend %absoluteCenter;
+        color: white;
+        font-size: 145px;
+        opacity: 70%;
+        font-weight: 900;
+        margin-top: 108px;
+        // z-index: 999;
+    }
+    &:hover h1 {
+        // opacity: 1;
+        text-shadow: 1px 1px white, -5px -5px #444;
+        transition: 0.7s;
+    }
+}
+
+@media screen and (max-width:$padWidth) {
+    .banner h1 {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (max-width:$desktopWidth) {
+    .banner h1 {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
 }
 
 

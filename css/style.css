@@ -134,6 +134,13 @@ table {
   border-spacing: 0;
 }
 
+.banner h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 img {
   max-width: 100%;
   /*不使用width:100% 是因避免圖片解析度不好，隨父元素被放大時會糊掉*/
@@ -148,6 +155,50 @@ a {
   text-decoration: none;
   color: white;
   cursor: pointer;
+}
+
+.banner {
+  max-width: 100%;
+  padding: 13% 25%;
+}
+
+.banner img {
+  border-radius: 30% 0 30% 0;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 145px;
+  opacity: 70%;
+  font-weight: 900;
+  margin-top: 108px;
+}
+
+.banner:hover h1 {
+  text-shadow: 1px 1px white, -5px -5px #444;
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    font-size: 20px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 1248px) {
+  .banner h1 {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    font-size: 20px;
+    padding-bottom: 24px;
+  }
 }
 
 /* navigation */
