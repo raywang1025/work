@@ -192,6 +192,7 @@ a {
 
 .header_menu {
   padding: 8px 12px;
+  font-weight: 100;
 }
 
 .header_menu a:hover {
@@ -248,6 +249,7 @@ a {
   font-size: 28px;
   padding: 16px 0;
   color: white;
+  font-weight: 100;
 }
 
 .web_item p {
