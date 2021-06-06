@@ -217,6 +217,11 @@ a {
   border-radius: 30% 0 30% 0;
 }
 
+.banner img:hover {
+  box-shadow: 0px 4px 4px 4px lightgrey;
+  transition: 0.7s;
+}
+
 .banner h1 {
   color: white;
   font-size: 145px;
@@ -300,5 +305,71 @@ a {
   clear: both;
 }
 
+.tool {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.tool .tool_border {
+  border: 1px solid white;
+  padding: 12px 80px 80px 80px;
+  border-radius: 4px;
+  background-color: gray;
+  margin: 20px 20px;
+}
+
+.tool .tool_border:hover {
+  box-shadow: 8px 8px lightgrey;
+  transform: translate(-8px, -8px);
+  transition: 0.7s;
+}
+
+.tool .tool_border h5 {
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  padding: 40px 0;
+  line-height: 32px;
+}
+
+.tool .tool_border p {
+  color: white;
+  font-weight: 100;
+  font-size: 12px;
+  text-align: center;
+}
+
+.tool .tool_item {
+  border: 1px solid white;
+  padding: 16px 16px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.tool h3 {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .tool {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .tool .tool_border {
+    padding: 0px 0px 52px 0px;
+  }
+}
+
 /* contact */
+.contact {
+  padding: 200px 30px;
+  font-size: 36px;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
