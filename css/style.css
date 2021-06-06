@@ -190,6 +190,13 @@ a {
   color: white;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: 0.7s;
+}
+
 .header_menu {
   padding: 8px 12px;
   font-weight: 100;
